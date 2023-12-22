@@ -4,25 +4,22 @@ const Navbar = () => {
   const navLink = (
     <>
       <li>
-        {" "}
-        <NavLink to={"/"}>Home</NavLink>{" "}
+        <NavLink to={"/"}>Home</NavLink>
       </li>
       <li>
-        {" "}
-        <NavLink to={"/contact"}>Contact</NavLink>{" "}
+        <NavLink to={"/contact"}>Contact</NavLink>
       </li>
       <li>
-        {" "}
-        <NavLink to={"/About"}>About Us</NavLink>{" "}
+        <NavLink to={"/About"}>About Us</NavLink>
       </li>
       <li>
-        {" "}
-        <NavLink to={"/blog"}>Blog</NavLink>{" "}
+        <NavLink to={"/blog"}>Blog</NavLink>
       </li>
     </>
   );
   return (
-    <div className="bg-green-600 border-b-4 border-b-lime-400">
+    <div className="bg-blue-500 text-white">
+        {/* border-b-4 border-b-lime-400 */}
       <div className="max-w-7xl mx-auto">
         <div className="navbar">
           <div className="navbar-start">
