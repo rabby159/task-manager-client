@@ -4,7 +4,8 @@ import pManager from "../../assets/image/projectManger.png";
 
 const UseCase = () => {
   return (
-    <div className="max-w-7xl mx-auto my-20 bg-blue-400 flex rounded-lg">
+    <div className="max-w-7xl mx-auto my-20 bg-blue-400 flex rounded-lg" data-aos="zoom-in" data-aos-delay="50"
+    data-aos-duration="1000">
       <div className="flex-1">
         <div className="flex justify-center items-center">
           <div className="mt-20">
@@ -13,7 +14,8 @@ const UseCase = () => {
           </div>
         </div>
       </div>
-      <div className="flex-1">
+      <div className="flex-1" data-aos="zoom-in" data-aos-delay="50"
+    data-aos-duration="1000">
         <div className="flex p-5 gap-5">
           <div className="bg-base-100 rounded-xl">
             <img src={dev} alt="" />
@@ -32,5 +34,6 @@ const UseCase = () => {
     </div>
   );
 };
+
 
 export default UseCase;

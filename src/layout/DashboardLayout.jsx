@@ -1,15 +1,12 @@
 import { NavLink, Outlet } from "react-router-dom";
 import {
   FaArrowRightFromBracket,
-  FaArtstation,
   FaCcAmazonPay,
   FaHouseMedical,
   FaSackDollar,
   FaShop,
 } from "react-icons/fa6";
 import useAuth from "../Hooks/useAuth";
-import { Helmet } from "react-helmet-async";
-
 
 const DashboardLayout = () => {
   const { logOut } = useAuth();
@@ -19,39 +16,38 @@ const DashboardLayout = () => {
       .catch((err) => console.log(err));
   };
 
+  
+
 
   return (
     <>
-    <Helmet>
-                <title>autoMyOwn | Dashboard</title>
-            </Helmet>
     <div className="flex gap-8">
-      <div className="w-80 min-h-screen bg-gray-700">
+      <div className="w-80 min-h-screen bg-blue-500">
         <div>
-            <h2 className="text-white text-center mt-5">TaskBoard Menu</h2> 
+            <h2 className="text-white text-center mt-5">TaskBoard</h2> 
         </div>
         <ul className="menu p-4 text-base font-medium text-white divide-y divide-blue-200">
             <div>
               <li>
-                <NavLink to="/dashboard/productManage">
+                <NavLink to="/dashboard/addTask">
                   <FaShop />
-                  Product Management
+                  Add Task
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/dashboard/salesCollection">
+                <NavLink to="/dashboard/toDoing">
                   <FaSackDollar />
-                  Sales-Collection
+                  To Doing
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/dashboard/payment">
-                  <FaCcAmazonPay /> Subscription & Payment
+                <NavLink to="/dashboard/completeTask">
+                  <FaCcAmazonPay /> Complete Task
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/dashboard/salesSummary">
-                  <FaArtstation /> Sales Summary
+                <NavLink to="/dashboard/allTask">
+                  <FaCcAmazonPay /> All Task
                 </NavLink>
               </li>
             </div>

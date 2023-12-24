@@ -1,4 +1,4 @@
-import task from '../../../public/task.png'
+import task from '/task.png'
 
 const Footer = () => {
   return (

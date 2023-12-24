@@ -5,6 +5,7 @@ import ErrorPage from "../pages/Error/ErrorPage";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import DashboardLayout from "../layout/DashboardLayout";
+import AddTask from "../pages/Dashboard/AddTask";
 
 
 const siteRoute = createBrowserRouter([
@@ -29,7 +30,13 @@ const siteRoute = createBrowserRouter([
     },
     {
         path: '/dashboard',
-        element: <DashboardLayout></DashboardLayout>
+        element: <DashboardLayout></DashboardLayout>,
+        children:[
+            {
+                path: 'addTask',
+                element: <AddTask></AddTask>
+            },
+        ]
     }
 ]);
 
